@@ -35,10 +35,11 @@ export default class App extends Component {
   <p>
     My explanation
   </p>
-  <p>Current Generation number goes here (uses state)</p>
+  
   </header>
  <div className="gameContainer">
-  gameContainer uses state
+  <p>gameContainer uses state</p>
+  <p>Current Generation number goes here (uses state)</p>
    Control Buttons
  </div>
      <ul>
