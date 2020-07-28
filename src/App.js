@@ -6,6 +6,26 @@ import Grid from './components/Grid';
 //import Grid from './components/Grid';
 
 export default class App extends Component {
+//constructor
+
+//start animation
+  //state
+//stop animation
+  //state
+
+// fastforward
+  //state
+
+//rewind
+  //state
+
+//clear board
+  //state
+
+//change handlers
+
+
+
   render() {
     return (
     
@@ -15,8 +35,10 @@ export default class App extends Component {
   <p>
     My explanation
   </p>
+  <p>Current Generation number goes here (uses state)</p>
   </header>
- <div className="gameCtnr">
+ <div className="gameContainer">
+  gameContainer uses state
    Control Buttons
  </div>
      <ul>

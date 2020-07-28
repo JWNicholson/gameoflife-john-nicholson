@@ -3,7 +3,7 @@ import React from 'react'
 function Cell() {
     return (
         <div>
-            <button />
+            <button  />//set className per props. 
         </div>
     )
 }
