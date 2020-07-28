@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, /*div,*/ span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -47,9 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-div{
-  display: flex;
-}
+
 
 /******** end reset ************/
 *{
@@ -57,15 +55,19 @@ div{
 }
 
 .App {
-border:4px dotted green;
+	text-align: center;
+  }
   
-  max-width: 1200px;
-  margin:auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
-  background-color: red;
-}
+.App-header {
+	background-color: #282c34;
+	height: 90px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
 
