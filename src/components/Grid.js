@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-//import Cell from './components/Cell'
+import Cell from './Cell'
 
 export default class Grid extends Component {
     renderCell = i =>{
@@ -14,11 +14,11 @@ export default class Grid extends Component {
 
     renderGrid(){
         let grid = []
-        //for loop to build 25 x 25 grid
-        for(let i =0;i < 25; i++){
+        //for loop to build 50 x 60 grid
+        for(let i =0;i < 60; i++){
             let childrens = [];
-            for(let x=0; x < 25; x++){
-                childrens.push(this.renderCell(x + i * 25))
+            for(let x=0; x < 60; x++){
+                childrens.push(this.renderCell(x + i * 60))
             }
             grid.push(<div key={i} className="grid-row">{childrens}</div>);
         }

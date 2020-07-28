@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-
+import {
+  fireworks,
+  flower,
+  gosperGun,
+  cellData
+} from './defaults/defaults'
 import Grid from './components/Grid';
 
 
@@ -37,7 +42,7 @@ startAnimation = () => {
         curGeneration: ++curState.curGeneration
       }),
       () => {
-        nextstate = this.createFrame(this.state.cellData);
+        nextState = this.createFrame(this.state.cellData);
       }
     );
   }, parseInt(this.state.speed, 10));
@@ -48,7 +53,7 @@ startAnimation = () => {
 };
 //stop animation
   stopAnimation = () => {
-    clearInterval(this.state.interval):
+    clearInterval(this.state.interval)
     this.setState({
       isSimulating: false,
       interval: null
@@ -60,6 +65,67 @@ startAnimation = () => {
 
 //rewind
   //state
+
+//create cell frames
+createFrame = neighborData => {
+  let game = neighborData.map((cell, index) => {
+    let neighborCount = 0;
+
+    //Check and track all neighbors of this cell
+    // use modulus to make not to check next and previous rows 
+    if((index -1) % 60 !==0 && neighborCount[index - 61]){
+      //check north west 
+      neighborCount ++
+    }
+    if (neighborCount[index - 60]) {
+      // check upper center 
+      neighborCount++;
+    }
+    if (index % 60 !== 0 && neighborCount[index - 59]) {
+      // check north east
+      neighborCount++;
+    }
+    if ((index - 1) % 60 !== 0 && neighborCount[index - 1]) {
+      // check west
+      neighborCount++;
+    }
+    if ((index === 0 || index % 60 !== 0) && neighborCount[index + 1]) {
+      // check east
+      neighborCount++;
+    }
+    if ((index - 1) % 60 !== 0 && neighborCount[index + 59]) {
+      // check south west
+      neighborCount++;
+    }
+    if (neighborCount[index + 60]) {
+      // check lower center
+      neighborCount++;
+    }
+    if (index % 50 !== 0 && neighborData[index + 61]) {
+      // Lower Right Neighbor
+      neighborCount++;
+    }
+    if (neighborData[index]) {
+       // Live cell with fewer than two live neighbors dies
+      // Live cell with more than three live neighbors dies
+      if (neighborCount < 2 || neighborCount > 3) {
+        return false;
+      } else {
+        // Live cell with two or three live neighbors lives
+        return true;
+      }
+    } else {
+      // Dead cell with exactly three live neighbors comes alive
+      if (neighborCount === 3) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  })
+  return game
+}
+
 
 //clear board
   clearBoard = () => {
