@@ -6,11 +6,54 @@ import Grid from './components/Grid';
 
 export default class App extends Component {
 //constructor
+constructor(props){
+  super(props)
+  this.state = {
+    cellData,
+    rewind: null,
+    isSimulating: false,
+    interval: null,
+    curGeneration: 0,
+    frameID:"",
+    simError:false,
+    speed: "150",
+    preset: null
+  }
+}
 
 //start animation
-  //state
+startAnimation = () => {
+  if (this.state.curGeneration == 0) {
+    let rewind = this.state.cellData.slice();
+    this.setState({
+      rewind
+    });
+  }
+  let nextState = this.createFrame(this.state.cellData);
+  let interval = setInterval(() => {
+    this.setState(
+      curState => ({
+        cellData: nextState,
+        curGeneration: ++curState.curGeneration
+      }),
+      () => {
+        nextstate = this.createFrame(this.state.cellData);
+      }
+    );
+  }, parseInt(this.state.speed, 10));
+  this.setState({
+    isSimulating: true,
+    interval
+  });
+};
 //stop animation
-  //state
+  stopAnimation = () => {
+    clearInterval(this.state.interval):
+    this.setState({
+      isSimulating: false,
+      interval: null
+    })
+  }
 
 // fastforward
   //state
@@ -19,7 +62,14 @@ export default class App extends Component {
   //state
 
 //clear board
-  //state
+  clearBoard = () => {
+    if(!this.state.isSimulating){
+      this.setState({
+        cellData,
+        curGeneration: 0
+      })
+    }
+  }
 
 //change handlers
 
