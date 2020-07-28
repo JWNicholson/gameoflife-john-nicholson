@@ -3,7 +3,6 @@ import './App.css';
 
 import Grid from './components/Grid';
 
-//import Grid from './components/Grid';
 
 export default class App extends Component {
 //constructor

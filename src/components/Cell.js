@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Cell() {
+function Cell(props) {
     return (
-        <div>
-            <button  />//set className per props. 
-        </div>
+        //make cell a button for selection
+            <button className={props.cellstyle} onClick={props.onClick} />
+        
     )
 }
 
