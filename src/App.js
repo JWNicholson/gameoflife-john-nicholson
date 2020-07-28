@@ -126,6 +126,21 @@ createFrame = neighborData => {
   return game
 }
 
+//cell styling
+clickCell = i => {
+  if (!this.state.isSimulating) {
+    if (this.state.curGeneration) {
+      this.setState({
+        curGeneration: 0
+      });
+    }
+    const changedState = this.state.cellData.slice();
+    changedState[i] = !changedState[i];
+    this.setState({
+      cellData: changedState
+    });
+  }
+};
 
 //clear board
   clearBoard = () => {
@@ -138,6 +153,46 @@ createFrame = neighborData => {
   }
 
 //change handlers
+
+//handleChanges()
+handleChanges = e => {
+  this.setState({
+    [e.target.name]: e.target.value
+  });
+};
+
+//handleChangesStartPattern()
+handleChangesStartPattern = e => {
+  this.setState({
+    [e.target.name]: e.target.value
+  }, () => {this.submitPreset()});
+};
+
+//submitStartPattern(
+// set state for chosen pattern (fireworks,flower, gosperGun)
+submitPreset = e => {
+  if (this.state.preset === "cellData") {
+    this.setState({
+      cellData,
+      curGeneration: 0
+    })
+  }
+  
+  if (this.state.preset === "gosperGun") {
+    this.setState({
+      cellData: gosperGun,
+      curGeneration: 0
+    })
+  }
+
+  if (this.state.preset == "flower") {
+    this.setState({
+      cellData: flower,
+      curGeneration: 0
+    })
+  }
+}
+
 
 
 
