@@ -1,11 +1,18 @@
 import React from 'react'
 
-function Cell(props) {
-    return (
-        //make cell a button for selection
-            <button className={props.cellstyle} onClick={props.onClick} />
-        
-    )
+//import '../index.css'
+
+const Cell = (props) => {
+
+  return (
+    <div 
+      className={props.cellClass}
+      id={props.id}
+      onClick={() => props.selectBox(props.row, props.col)}
+    />
+  )
 }
+
+ 
 
 export default Cell
