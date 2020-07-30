@@ -6,13 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  background-image: url(https://images.unsplash.com/photo-1584058878169-03e19f2429ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+
+  /* background-image: url(https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=638&q=80); */
   
-/*background-color: pink; */
+ 
 }
 
+img{
+  opacity: 0.6;
+}
 
+.row{
+  margin: 14px;
+}
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+.col{
+  text-align: left;
+}

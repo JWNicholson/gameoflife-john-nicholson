@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Footer from './Footer'
 import GridStyles from "./styles/gridStyles";
-import { Button, ButtonGroup,ButtonToolbar, Col, } from 'reactstrap';
+import { Button, ButtonGroup,ButtonToolbar,Row, Col, } from 'reactstrap';
 
 
 // Set the map coordinates patter is allowed to travel
@@ -183,6 +183,18 @@ const Grid = () => {
         <div className="counter-container">
         <h2 className="count">Generation Count: {genCount}</h2>
         </div>
+        <Row className="instruction-container">
+          <Col>
+            <h4>How to play</h4>
+          <p>Click individual cells to make your own pattern or use one of the buttons below. Then click Start. When the simulation is running, using the buttons you can speed it up or slow it down. To slow it down the first time you must speed it up first. To see one generation at a time, while the sim is running, hit the stop button, then you can use the One Step button. To start fresh, use the clear button.</p>
+          </Col>
+
+       
+      
+         
+      </Row>
+        
+
         <div className="button-container">
 
         <div className="shape-buttons-container">

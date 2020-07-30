@@ -24,6 +24,7 @@ const GridStyles = styled.div`
   }
 
 .game-rules,
+.instruction-container,
 .counter-container,
 .grid-header{
   width:50%;
@@ -34,6 +35,10 @@ const GridStyles = styled.div`
   margin-bottom:12px;
   background-color: rgb(230,250,255, 0.90);
   border-radius:4px;
+}
+
+.instruction-container{
+  align-items:flex-start;
 }
 
 .game-rules{
@@ -62,8 +67,7 @@ const GridStyles = styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-left: 5%;
-    margin-right: 10%;
+    margin:auto;
   }
 
   button {

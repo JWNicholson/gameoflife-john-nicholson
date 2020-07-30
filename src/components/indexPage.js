@@ -13,7 +13,7 @@ const Home = () => {
         <h1>Conway's Game of Life</h1>
         <Row>
           <Col>
-        <p>The Game Of Life is a simulation developed in 1970 by mathematician John Conway. It applies rules to create Cellular Automation. Cellular Automation is a grid of cells that cycle through different states. It is "Turing Complete" and fully reprogrammable to be used to execute any other computable function.</p>
+        <p>The Game Of Life is a simulation developed in 1970 by mathematician John Conway. It applies rules to create Cellular Automation. Cellular Automation is a grid of cells that cycle through different states. It is "Turing Complete".Turing Complete means it can manipulate data-manipulation rule sets.</p>
         </Col>
         </Row>
 
@@ -22,6 +22,7 @@ const Home = () => {
         <p>The simulation follows 4 simple rules, which give infinite different results.</p> 
         <p>Sometimes it is a repeating sequence (somtimes referred to as a glider).</p> 
         <p>Occasionaly all of the cells die or settle into a still pattern.</p>
+        <p><small>Note: this version is not mobile friendly yet.</small></p>
         </Col>
         </Row>
 
