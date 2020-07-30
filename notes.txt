@@ -2,6 +2,16 @@ Google Doc - https://trello.com/b/kBhRDvmK/jwnicholson-game-of-life
 Trello - https://trello.com/b/kBhRDvmK/jwnicholson-game-of-life
 
 
+Custom Features -
+* Create a few sample cell configurations that users can load and run
+* Add an option that creates a random cell configuration that users can
+  run
+* Add additional cell properties, like color or size, and incorporate
+  them into your visualization
+* Allow users to specify the speed of the simulation
+* Provide functionality to manually step through the simulation one
+  generation at a time, as opposed to animating automatically
+
 Algorithm -
 Set time interval - user input
 Start game - button clicked
