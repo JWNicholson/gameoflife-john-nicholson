@@ -6,19 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  display: flex;
-  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1584058878169-03e19f2429ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+
+  /* background-image: url(https://images.unsplash.com/photo-1528459061998-56fd57ad86e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=638&q=80); */
+  
+ 
 }
 
-.root{
-  background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+img{
+  opacity: 0.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.row{
+  margin: 14px;
+}
+
+.col{
+  text-align: left;
 }

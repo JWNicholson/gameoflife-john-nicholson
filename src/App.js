@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route, 
+} from "react-router-dom";
 
-import './App.css';
+import Grid from "./components/Grid";
+import Home from "./components/indexPage";
 
-//import Grid from './components/Grid';
+const App = () => {
+  return ( 
+    <Router>
+        <Route exact path="/" component={Home}/>
+        <Route path="/game" component={Grid} />
+    </Router>
+  );
+};
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Conway's Game Of Life</h1>
-
-      </div>
-    )
-  }
-}
+export default App;
