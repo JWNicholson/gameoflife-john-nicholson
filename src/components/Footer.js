@@ -7,7 +7,8 @@ const Footer = () => {
         <FooterStyles>
         <div className="footer-div">
             
-            <h6>Created by John W Nicholson</h6>
+            <h5>Created by John W Nicholson</h5>
+            <h6>On Github: <a href="https://github.com/JWNicholson" target="_blank" rel="noopener noreferrer">@JWNicholson</a></h6>
           
         </div>
         </FooterStyles>

@@ -6,9 +6,10 @@ justify-content:center;
 
 height:100vh;
 width:100vw;
+margin-top:24px;
 
 
-background-color:darkslategray;
+background-color:#182326;
 color:aliceblue;
 
 .footer-div{
