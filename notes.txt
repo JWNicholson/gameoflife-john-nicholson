@@ -1,0 +1,40 @@
+Google Doc - https://trello.com/b/kBhRDvmK/jwnicholson-game-of-life
+Trello - https://trello.com/b/kBhRDvmK/jwnicholson-game-of-life
+
+
+Algorithm -
+Set time interval - user input
+Start game - button clicked
+Draw the grid
+Draw shape -
+  Draw cell
+  check cell-
+  Does cell have at least two live neighbors?
+    if no, cell dies
+    else cell survives
+  Does cell have more than three live neigbors?
+    if yes cell dies
+    else cell dies
+  If cell is dead
+    if yes, does it have exactly 3 live neighbors?
+        if yes, it becomes alive
+    
+Check next cell
+
+Stop game - stop button clicked
+
+
+
+
+App layout
+Components-
+Header
+Footer
+Buttons
+Grid
+Cell
+
+Functions -
+start and stop game
+change number rows & columns
+run the game
