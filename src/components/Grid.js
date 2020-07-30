@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import Footer from './Footer'
 import GridStyles from "./styles/gridStyles";
-import { Button, ButtonGroup,ButtonToolbar,Alert } from 'reactstrap';
+import { Button, ButtonGroup,ButtonToolbar, Col, } from 'reactstrap';
 
 
 // Set the map coordinates patter is allowed to travel
@@ -92,7 +93,7 @@ const Grid = () => {
   //  when the active grid is 1, set frameOne's state in the gameRules function. 
   //Then set that into frameTwo. 
   //Else, if frameTwo is active set it in the gameRules
-  //Put that in frameOne's state. This gets it ready to be handed off.
+  //Put that in frameOne's state. This gets it ready to be handed off
   //This is also where the generation Counter is located
   const nextGen = () => {
     setGenCount(genCount + 1);
@@ -137,9 +138,12 @@ const Grid = () => {
 
       
       </div>
-      <Alert color="info" className="game-rules">
-        Rules of the game blah blah yackety yack
-      </Alert>
+      <div className="game-rules">
+      <p>1. Any live cell with fewer than 2 live neighbors dies from underpopulation.</p>
+      <p>2. Any live cell with more than 3 neighbors dies due to overpopulation.</p>
+      <p>3. Any live cell with 2 or 3 neighbors lives, and is unchanged for that generation.</p>
+      <p>4. Any dead cell with exactly 3 neighbors comes to life.</p>
+      </div>
         <div
           className="grid-container"
           style={{
@@ -300,6 +304,7 @@ const Grid = () => {
         </div>
        
       </GridStyles>
+      <Footer />
     </div>
   );
 };

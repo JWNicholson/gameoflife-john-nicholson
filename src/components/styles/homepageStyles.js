@@ -18,9 +18,13 @@ const HomePageStyle = styled.div`
   margin-right: 25%;
   background-color: rgb(230,250,255, 0.90);
   border-radius: 2px;
-
+.main-wrapper{
+  top:0;
+  
+}
   .main {
     margin-bottom: 2rem;
+   
   }
 
   h1 {

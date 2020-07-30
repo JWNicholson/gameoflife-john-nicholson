@@ -26,7 +26,7 @@ const GridStyles = styled.div`
 .game-rules,
 .counter-container,
 .grid-header{
-  width:33%;
+  width:50%;
   display:flex;
   justify-content: center;
 
@@ -34,6 +34,15 @@ const GridStyles = styled.div`
   margin-bottom:12px;
   background-color: rgb(230,250,255, 0.90);
   border-radius:4px;
+}
+
+.game-rules{
+  width: 50%;
+  display:flex;
+ flex-direction:column;
+ align-items:flex-start;
+
+ padding:14px;
 }
 
 
