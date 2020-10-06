@@ -54,3 +54,4 @@ You can read more about it here. https://rb.gy/rceopt
 * React Router to navigate between pages - https://reactrouter.com/
 
 # Try it out
+Fork this project or download a copy. When its where you want it on your machine, unzip and run "npm install".
