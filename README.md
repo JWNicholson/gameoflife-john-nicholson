@@ -48,3 +48,5 @@ You can read more about it here. https://rb.gy/rceopt
 <h3>React Dependencies Added</h3>
 
 * Axios js for the API call.- https://github.com/axios/axios
+
+* Reactstrap for styling - https://reactstrap.github.io/
