@@ -23,4 +23,16 @@ to determine if a cell lives and is inclded in the next calculation, or dies and
 
 You can read more about it here. https://rb.gy/rceopt
 
-# Exampl Code
+# Example Code
+
+      //set up rules for cell movement
+      if (neighbors < 2 || neighbors > 3) {
+        newGrid[i][j] = 0;
+      } else if (g[i][j] === 1 && (neighbors === 2 || neighbors === 3)) {
+        newGrid[i][j] = 1;
+      } else if (g[i][j] === 0 && neighbors === 3) {
+        newGrid[i][j] = 1;
+      }
+    }
+  
+
