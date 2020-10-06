@@ -35,4 +35,16 @@ You can read more about it here. https://rb.gy/rceopt
       }
     }
   
+ # Build Status
+ Finished
+ 
+ # Tech Stack Used
+* React js - https://reactjs.org/docs/getting-started.html
 
+* Create React - App https://github.com/facebook/create-react-app
+
+* Create React App's built in environment variables to protect the API from being loaded to this respository.
+
+<h3>React Dependencies Added</h3>
+
+* Axios js for the API call.- https://github.com/axios/axios
