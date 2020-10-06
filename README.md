@@ -16,7 +16,9 @@ to determine if a cell lives and is inclded in the next calculation, or dies and
 
 # The rules are:
 1. Any live cell with 2 or 3 neighbors survives
+
 2. Any dead cell with 3 live neighbors becomes a live cell
+
 3.Any other live cells die in the next generation, and all other dead cells remain dead
 
 You can read more about it here. https://rb.gy/rceopt
