@@ -19,6 +19,6 @@ to determine if a cell lives and is inclded in the next calculation, or dies and
 
 2. Any dead cell with 3 live neighbors becomes a live cell
 
-3.Any other live cells die in the next generation, and all other dead cells remain dead
+3. Any other live cells die in the next generation, and all other dead cells remain dead
 
 You can read more about it here. https://rb.gy/rceopt
