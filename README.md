@@ -51,4 +51,4 @@ You can read more about it here. https://rb.gy/rceopt
 
 * Reactstrap for styling - https://reactstrap.github.io/
 
-*https://reactrouter.com/
+* React Router to navigate between pages - https://reactrouter.com/
